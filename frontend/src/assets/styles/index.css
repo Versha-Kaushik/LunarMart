@@ -1,0 +1,125 @@
+main {
+  min-height: 80vh;
+  margin-top: 80px;
+  padding-bottom: 60px;
+}
+
+:root {
+  --lm-bg: #0f172a;
+  --lm-surface: #0b1628;
+  --lm-border: rgba(148, 163, 184, 0.2);
+  --lm-text: #e2e8f0;
+  --lm-muted: #94a3b8;
+  --lm-accent: #38bdf8;
+  --lm-accent-2: #7c3aed;
+  --lm-warm: #f59e0b;
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, #10203a 0, #0f172a 40%, #0b1221 100%);
+  color: var(--lm-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--lm-text);
+}
+
+.navbar.bg-dark {
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(12, 21, 38, 0.95) 100%);
+  border-bottom: 1px solid var(--lm-border);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--lm-accent) 0%, var(--lm-accent-2) 100%);
+  border: none;
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, var(--lm-accent-2) 0%, var(--lm-accent) 100%);
+  box-shadow: 0 10px 28px rgba(124, 58, 237, 0.35);
+}
+
+.card,
+.list-group-item {
+  background-color: var(--lm-surface);
+  border: 1px solid var(--lm-border);
+  color: var(--lm-text);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-body {
+  flex-grow: 1;
+}
+
+.card button,
+.card .btn-group {
+  margin-top: auto;
+}
+
+.list-group-item {
+  background-color: rgba(16, 24, 40, 0.8);
+}
+
+.rating svg {
+  color: var(--lm-warm);
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e825;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.product-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
